@@ -7,6 +7,8 @@
 # answer = Kernel.gets()
 # Kernel.puts(answer)
 
+
+
 def prompt(message)
     Kernel.puts("=> #{message}")
 end
