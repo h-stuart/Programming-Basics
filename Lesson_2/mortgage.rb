@@ -111,9 +111,9 @@ monthly_payment = loan_amount * (monthly_interest_rate / (1 - (1 + monthly_inter
 
     calculation_prompt = <<-MSG
     Here are your results:
-    1) Monthly Payment: $#{monthly_payment.to_f}
-    2) Monthly Interest Rate: #{monthly_interest_rate}%
-    3) Loan Term: #{loan_duration_in_months} months
+        1) Monthly Payment: $#{format('%0.2f', monthly_payment)}
+        2) Monthly Interest Rate: #{monthly_interest_rate}%
+        3) Loan Term: #{loan_duration_in_months} months
     MSG
 
     prompt(calculation_prompt)
